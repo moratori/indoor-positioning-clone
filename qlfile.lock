@@ -1,0 +1,4 @@
+("quicklisp" .
+ (:class qlot.source.ql:source-ql-all
+  :initargs (:project-name "quicklisp" :%version "2015-10-31")
+  :version "2015-10-31"))

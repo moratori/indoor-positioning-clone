@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .postable{
+      margin: 0 auto;
+      margin-top: 3%;
+      width:80%;
+      border-collapse: separate;
+      border-spacing: 0px;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+    .postable th{
+      height: 40px;
+      width: 25%;
+      padding: 4px;
+      text-align: center;
+      color: #444;
+      background-color: #ddd;
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .postable td{
+      height: 40px;
+      text-align: center;
+      padding: 4px;
+      background-color: #fafafa;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="postable">
+  <tbody>
+    <tr>
+      <th>なまえ</th>
+      <th>場所</th>
+      <th>端末</th>
+      <th>時間</th>
+    </tr>
+    <% @loop member %>
+      <tr>
+        <td><% @var name  %></td>
+        <td><% @var place %></td>
+        <td><% @var devicetype  %></td>
+        <td><% @var time  %></td>
+      </tr>
+    <% @endloop %>
+  </tbody>
+</table>
+<body>
+</html>
+
