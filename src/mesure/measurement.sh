@@ -79,6 +79,7 @@ cd $DIR
 for i in `seq 1 $TIMES`; do
         rawdata=`sudo iwlist $NIC scan`
         if [ $? -ne 0 ]; then
+                echo "iwlist failed... sleep in some time"
                 sleep 10
                 continue
         fi
