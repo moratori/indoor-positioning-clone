@@ -9,3 +9,4 @@
 quicklisp/
 default_fingerprint/
 clone.sh
+qlfile.lock
